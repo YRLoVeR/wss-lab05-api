@@ -18,7 +18,7 @@ class UserModel {
       id: int.tryParse(json['id']?.toString() ?? '') ?? 0,
       email: json['email'] as String? ?? 'No email provided',
       firstName: json['first_name'] as String? ?? 'Unknown',
-      lastName: json['last_name'] as String ?? '',
+      lastName: json['last_name'] as String? ?? '',
       avatar: json['avatar'] as String? ?? '',
     );
   }
